@@ -7,6 +7,8 @@ public class Photo {
     @NotEmpty
     private String fileName;
 
+    private byte[] data;
+
     public Photo() {
     }
 
@@ -29,6 +31,14 @@ public class Photo {
 
     public void setFileName(String fileName) {
         this.fileName = fileName;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
     }
 }
 
